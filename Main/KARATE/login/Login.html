@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Ký</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="image/vuidokan.jpg" alt="" style="margin-right: 40px;">
+            <h1>Cty TNHH Phát Triển Thể Thao Vuidokan</h1>
+        </div>
+    </header>
+
+    <h2>Form Đăng Ký</h2>
+
+    <form id="registrationForm" action="https://formspree.io/f/xnnanwyg" method="POST">
+        <label for="name">Họ và tên:</label><br>
+        <input type="text" id="name" name="name" required autocomplete="off"><br><br>
+
+        <label for="phone">Số điện thoại:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required autocomplete="off"><br><br>
+
+        <label for="class">Lớp học tham gia:</label><br>
+        <select id="class" name="class" required>
+            <option value="">Chọn lớp học</option>
+            <option value="Karate Hưng Khánh Trung C">Karate Hưng Khánh Trung C</option>
+            <option value="Karate Trương Vĩnh Ký">Karate Trương Vĩnh Ký</option>
+            <option value="Karate Quốc Thới">Karate Quốc Thới</option>
+            <option value="Karate Võ Văn Kiệt">Karate Võ Văn Kiệt</option>
+            <option value="Karate Vĩnh Bình">Karate Vĩnh Bình</option>
+            <option value="Karate Nhà Thi Đấu">Karate Nhà Thi Đấu</option>
+            <option value="Karate Tân Thiềng A">Karate Tân Thiềng A</option>
+        </select><br><br>
+        <input type="submit" value="Gửi">
+    </form>
+
+    <footer>
+        <p>&copy; 2024 Cty TNHH Phát Triển Thể Thao Vuidokan. All rights reserved.</p>
+    </footer>
+    <script src="login.js"></script>
+</body>
+</html>

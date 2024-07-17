@@ -1,0 +1,145 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #00CD00;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+.header-content img {
+    margin-right: 10px;
+    width: 100px;
+    height: auto;
+}
+
+header {
+    font-size: 30px;
+    background-color: red;
+    color: white;
+    padding: 10px 0;
+    height: 200px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+button{
+    margin-bottom: 10px;
+    background-color: #20ca20;
+    cursor: pointer;
+    text-align: center;
+    font-size: 50px;
+    border-radius: 50px;
+    height: 60px;
+    width: 500px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 30px;
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+footer {
+    font-family: Arial;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 30px;
+    margin: 5px 0 2px;
+}
+
+form input, form button {
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    width: 700px;
+}
+
+form textarea{
+    font-size: 30px;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    width: 700px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+.Phone img{
+    margin-right: 10px;
+    width: 45px;
+    height: auto;
+}
+
+.Email img{
+    margin-right: 10px;
+    width: 45px;
+    height: auto;
+}
+
+.Local img{
+    margin-right: 10px;
+    width: 45px;
+    height: auto;
+}
+
+.Facebook img{
+    margin-right: 10px;
+    width: 45px;
+    height: auto;
+}
