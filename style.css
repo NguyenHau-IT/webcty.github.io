@@ -143,3 +143,34 @@ form button:hover {
     width: 45px;
     height: auto;
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    header {
+        font-size: 20px;
+        height: auto;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 20px;
+        height: auto;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    form input, form button, form textarea {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
