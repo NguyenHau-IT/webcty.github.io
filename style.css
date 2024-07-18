@@ -147,21 +147,21 @@ form button:hover {
 /* Mobile styles */
 @media (max-width: 768px) {
     header {
-        font-size: 20px;
+        font-size: 7vw;
         height: auto;
-        padding: 10px;
+        padding: 4vw;
     }
 
     button {
-        font-size: 20px;
+        font-size: 5vw;
         height: auto;
-        width: 100%;
-        border-radius: 10px;
+        width: 90vw;
+        border-radius: 5vw;
     }
 
     form input, form button, form textarea {
-        font-size: 20px;
-        width: 100%;
+        font-size: 5vw;
+        width: 90vw;
     }
 
     .header-content {
@@ -171,6 +171,6 @@ form button:hover {
 
     nav ul li {
         display: block;
-        margin: 10px 0;
+        margin: 2vw 0;
     }
 }
