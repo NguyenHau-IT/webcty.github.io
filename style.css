@@ -147,21 +147,9 @@ form button:hover {
 /* Mobile styles */
 @media (max-width: 768px) {
     header {
-        font-size: 7vw;
-        height: auto;
-        padding: 4vw;
-    }
-
-    button {
         font-size: 5vw;
         height: auto;
-        width: 90vw;
-        border-radius: 5vw;
-    }
-
-    form input, form button, form textarea {
-        font-size: 5vw;
-        width: 90vw;
+        padding: 2vh 0;
     }
 
     .header-content {
@@ -169,8 +157,29 @@ form button:hover {
         text-align: center;
     }
 
+    button {
+        font-size: 5vw;
+        height: auto;
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    form input, form button, form textarea {
+        font-size: 5vw;
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
     nav ul li {
         display: block;
-        margin: 2vw 0;
+        margin: 10px 0;
+    }
+
+    section {
+        font-size: 5vw;
     }
 }
