@@ -97,3 +97,20 @@ footer {
     height: 30px;
 
 }
+
+@media only screen and (max-width: 600px) {
+    form {
+        font-size: 30px;
+        padding: 15px;
+    }
+    form input[type="text"],
+    form input[type="tel"],
+    form select {
+        font-size: 30px;
+        height: 50px;
+    }
+    header {
+        font-size: 20px;
+        height: 150px;
+    }
+}
