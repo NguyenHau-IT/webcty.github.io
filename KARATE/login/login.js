@@ -53,3 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+function goback(){
+    window.history.back();
+}
