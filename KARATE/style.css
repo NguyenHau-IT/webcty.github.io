@@ -78,7 +78,7 @@ footer {
     height: 30px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     header {
         font-size: 5vw;
         height: auto;
