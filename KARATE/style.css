@@ -78,58 +78,35 @@ footer {
     height: 30px;
 }
 
-@media (max-width: 1000px) {
-    body {
-        background-size: auto;
-    }
-
-    header {
-        font-size: 5vw;
-        height: auto;
-        padding: 2vh 0;
-    }
-
+@media (max-width: 768px) {
     .header-content {
-        flex-direction: row-reverse; /* Adjust direction for better layout */
-        text-align: center;
-        padding: 0 10px; /* Add padding for spacing */
+        flex-direction: column;
+        align-items: center;
     }
 
     .header-content img {
-        width: 70px; /* Adjust image size */
-        height: auto;
         margin-right: 0;
-        margin-left: 10px; /* Provide margin for separation */
+        margin-bottom: 10px;
     }
 
     h3 {
-        font-size: 5vw; /* Scale font size based on viewport */
-        padding: 10px; /* Add padding for spacing */
+        font-size: 30px;
     }
 
     table {
-        width: 100%; /* Ensure table occupies full width */
-        overflow-x: auto; /* Enable horizontal scrolling */
-        font-size: 4vw; /* Scale font size for readability */
-    }
-
-    th, td {
-        padding: 10px; /* Add padding for spacing */
+        font-size: 18px;
     }
 
     .Information {
-        font-size: 4vw; /* Scale font size for readability */
+        font-size: 20px;
     }
 
     button {
-        font-size: 5vw; /* Scale button font size */
-        height: auto;
-        width: 100%; /* Ensure button spans full width */
-        border-radius: 10px; /* Adjust border radius for button */
+        font-size: 20px;
+        padding: 8px 16px;
     }
 
     footer {
-        font-size: 3vw; /* Scale font size for footer */
-        height: auto;
+        font-size: 14px;
     }
 }
