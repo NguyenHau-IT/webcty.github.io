@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêu đai theo yêu cầu</title>
+    <link rel="stylesheet" href="đai.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="image/vuidokan.jpg" alt="" style="margin-right: 40px;">
+            <h1>Cty TNHH Phát Triển Thể Thao Vuidokan</h1>
+        </div>
+    </header>
+
+    <h2>Form Đăng Ký</h2>
+    <div class="form">
+
+        <form id="registrationForm" action="https://formspree.io/f/xnnanwyg" method="POST">
+            <label for="name">Họ và tên:</label><br>
+            <input type="text" id="name" name="name" required autocomplete="off"><br><br>
+
+            <label for="phone">Số điện thoại:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required autocomplete="off"><br><br>
+
+            <label for="topic">Nội dung thêu:</label><br>
+            <input type="text" id="topic" name="topic" required autocomplete="off"><br><br>
+
+            <label for="belt">Chọn màu đai:</label><br>
+            <select id="belt" name="class" required>
+                <option value="" >Chọn màu đai</option>
+                <option value="Trắng">Trắng</option>
+                <option value="Xanh lá">Xanh lá</option>
+                <option value="Vàng">Vàng</option>
+                <option value="Cam">Cam</option>
+                <option value="Xanh dương">Xanh dương</option>
+                <option value="Đỏ">Đỏ</option>
+                <option value="Tím">Tím</option>
+                <option value="Nâu">Nâu</option>
+                <option value="Đen">Đen</option>
+            </select><br><br>
+            <label for="size">Chọn độ đài:</label><br>
+            <select id="size" name="size" required>
+                <option value="" >Chọn độ dài</option>
+                <option value="2m6">2m6</option>
+                <option value="2m8">2m8</option>
+                <option value="3m">3m</option>
+                <option value="3m2">3m2</option>
+            </select><br><br>
+            <input type="submit" value="Gửi">
+            <button onclick="goback()">Quay lại</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Màu</th>
+                    <th>Kích Thước</th>
+                    <th>Giá</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sản phẩm 1 -->
+                <tr>
+                    <td rowspan="3">1</td>
+                    <td rowspan="3">Trắng</td>
+                    <td>Nhỏ</td>
+                    <td>100,000 VND</td>
+                </tr>
+                <tr>
+                    <td>Trung</td>
+                    <td>150,000 VND</td>
+                </tr>
+                <tr>
+                    <td>Lớn</td>
+                    <td>200,000 VND</td>
+                </tr>
+                <!-- Sản phẩm 2 -->
+                <tr>
+                    <td rowspan="2">2</td>
+                    <td rowspan="2">Xanh lá</td>
+                    <td>Trung</td>
+                    <td>120,000 VND</td>
+                </tr>
+                <tr>
+                    <td>Lớn</td>
+                    <td>170,000 VND</td>
+                </tr>
+                <!-- Sản phẩm 3 -->
+                <tr>
+                    <td rowspan="4">3</td>
+                    <td rowspan="4">Vàng</td>
+                    <td>Nhỏ</td>
+                    <td>110,000 VND</td>
+                </tr>
+                <tr>
+                    <td>Trung</td>
+                    <td>160,000 VND</td>
+                </tr>
+                <tr>
+                    <td>Lớn</td>
+                    <td>210,000 VND</td>
+                </tr>
+                <tr>
+                    <td>XL</td>
+                    <td>250,000 VND</td>
+                </tr>
+                <!-- Sản phẩm 4 -->
+                <tr>
+                    <td rowspan="3">4</td>
+                    <td rowspan="3">Cam</td>
+                    <td>Nhỏ</td>
+                    <td>90,000 VND</td>
+                </tr>
+                <tr>
+                    <td>Trung</td>
+                    <td>140,000 VND</td>
+                </tr>
+                <tr>
+                    <td>Lớn</td>
+                    <td>190,000 VND</td>
+                </tr>
+                <!-- Sản phẩm 5 -->
+                <tr>
+                    <td rowspan="2">5</td>
+                    <td rowspan="2">Xanh dương</td>
+                    <td>Nhỏ</td>
+                    <td>80,000 VND</td>
+                </tr>
+                <tr>
+                    <td>Lớn</td>
+                    <td>180,000 VND</td>
+                </tr>
+                <!-- Sản phẩm 6 -->
+                <tr>
+                    <td rowspan="3">6</td>
+                    <td rowspan="3">Đỏ</td>
+                    <td>Nhỏ</td>
+                    <td>130,000 VND</td>
+                </tr>
+                <tr>
+                    <td>Trung</td>
+                    <td>180,000 VND</td>
+                </tr>
+                <tr>
+                    <td>Lớn</td>
+                    <td>230,000 VND</td>
+                </tr>
+                <!-- Sản phẩm 7 -->
+                <tr>
+                    <td rowspan="3">7</td>
+                    <td rowspan="3">Tím</td>
+                    <td>Nhỏ</td>
+                    <td>140,000 VND</td>
+                </tr>
+                <tr>
+                    <td>Trung</td>
+                    <td>190,000 VND</td>
+                </tr>
+                <tr>
+                    <td>Lớn</td>
+                    <td>240,000 VND</td>
+                </tr>
+                <!-- Sản phẩm 8 -->
+                <tr>
+                    <td rowspan="2">8</td>
+                    <td rowspan="2">Nâu</td>
+                    <td>Trung</td>
+                    <td>150,000 VND</td>
+                </tr>
+                <tr>
+                    <td>Lớn</td>
+                    <td>200,000 VND</td>
+                </tr>
+                <!-- Sản phẩm 9 -->
+                <tr>
+                    <td rowspan="3">9</td>
+                    <td rowspan="3">Đen</td>
+                    <td>Nhỏ</td>
+                    <td>120,000 VND</td>
+                </tr>
+                <tr>
+                    <td>Trung</td>
+                    <td>170,000 VND</td>
+                </tr>
+                <tr>
+                    <td>Lớn</td>
+                    <td>220,000 VND</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Cty TNHH Phát Triển Thể Thao Vuidokan. All rights reserved.</p>
+    </footer>
+    <script src="đai.js"></script>
+</body>
+
+</html>
