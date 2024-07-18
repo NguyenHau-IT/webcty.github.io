@@ -98,19 +98,41 @@ footer {
 
 }
 
-@media only screen and (max-width: 600px) {
-    form {
-        font-size: 30px;
-        padding: 15px;
-    }
-    form input[type="text"],
-    form input[type="tel"],
-    form select {
-        font-size: 30px;
-        height: 50px;
-    }
+@media (max-width: 768px) {
     header {
-        font-size: 20px;
-        height: 150px;
+        font-size: 5vw;
+        height: auto;
+        padding: 2vh 0;
+    }
+
+    .header-content {
+        flex-direction: row-reverse;
+        text-align: center;
+    }
+
+    button {
+        font-size: 5vw;
+        height: auto;
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    form input, form button, form textarea {
+        font-size: 5vw;
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        font-size: 5vw;
     }
 }
