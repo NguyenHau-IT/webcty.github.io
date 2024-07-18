@@ -78,7 +78,7 @@ footer {
     height: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 100%) {
     header {
         font-size: 5vw;
         height: auto;
@@ -93,23 +93,8 @@ footer {
     button {
         font-size: 5vw;
         height: auto;
-        width: 90%;
+        width: 100%;
         border-radius: 10px;
-    }
-
-    form input, form button, form textarea {
-        font-size: 5vw;
-        width: 90%;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
     }
 
     section {
