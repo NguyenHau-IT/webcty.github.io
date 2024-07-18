@@ -10,3 +10,7 @@ function validateDate() {
 
     return true;
 }
+
+function goback(){
+    window.history.back();
+}
