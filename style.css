@@ -153,7 +153,7 @@ form button:hover {
     }
 
     .header-content {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
     }
 
