@@ -105,3 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+function goback(){
+    window.history.back();
+}
