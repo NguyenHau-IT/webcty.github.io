@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vuidokan</title>
+    <link rel="icon" href="image/vuidokan.jpg" rel="image/vuidokan">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="image/vuidokan.jpg" alt="" style="margin-right: 40px;">
+            <h1>Cty TNHH Phát Triển Thể Thao Vuidokan</h1>
+        </div>
+    </header>
+    <button onclick="goback()">Quay lại</button>
+    <div>
+    <h2>Đặt Sân</h2>
+    <form id="bookingForm" action="https://formspree.io/f/mdknkqve" method="POST">
+        <label for="name">Tên:</label>
+        <input type="text" id="name" name="Tên" required autocomplete="off"><br>
+
+        <label for="phone">Số điện thoại:</label>
+        <input type="tel" id="phone" name="Sđt" required autocomplete="off"><br>
+
+        <label for="courtNumber">Số lượng sân:</label>
+        <input type="number" id="courtNumber" name="Số lượng sân" min="1" max="4" required autocomplete="off"><br>
+
+        <label for="courtId">Sân số:</label>
+        <input type="text" id="courtId" name="Sân số" required autocomplete="off"><br>
+
+        <label for="rentalDuration">Thời gian thuê :</label>
+        <input type="text" id="rentalDuration" name="Thời gian thuê" required autocomplete="off"><br>
+
+        <label for="startTime">Giờ nhận sân:</label>
+        <input type="time" id="startTime" name="Giờ nhận sân" required autocomplete="off"><br>
+
+        <label for="date">Ngày nhận (dd/mm/yyyy):</label>
+        <input id="date" name="Ngày nhận sân" required autocomplete="off"><br>
+
+        <button type="submit">Đặt Sân</button>
+    </form>
+
+    <h2>Bảng Giá Thuê</h2>
+    <table>
+        <tr>
+            <th>Thời Gian</th>
+            <th>Số Sân</th>
+            <th>Giá</th>
+        </tr>
+        <!-- 1 giờ thuê -->
+        <tr>
+            <td rowspan="4">1 giờ</td>
+            <td>1</td>
+            <td>200,000 VND</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>380,000 VND</td>
+        </tr>
+        <tr>
+
+            <td>3</td>
+            <td>540,000 VND</td>
+        </tr>
+        <tr>
+
+            <td>4</td>
+            <td>680,000 VND</td>
+        </tr>
+        <!-- 2 giờ thuê -->
+        <tr>
+            <td rowspan="4">2 giờ</td>
+            <td>1</td>
+            <td>400,000 VND</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>760,000 VND</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>1,080,000 VND</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>1,360,000 VND</td>
+        </tr>
+        <!-- 3 giờ thuê -->
+        <tr>
+            <td rowspan="4">3 giờ</td>
+            <td>1</td>
+            <td>600,000 VND</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>1,140,000 VND</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>1,620,000 VND</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>2,040,000 VND</td>
+        </tr>
+        <!-- 4 giờ thuê -->
+        <tr>
+            <td rowspan="4">4 giờ</td>
+            <td>1</td>
+            <td>800,000 VND</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>1,520,000 VND</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>2,160,000 VND</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>2,720,000 VND</td>
+        </tr>
+    </table>
+</div>
+
+    <footer>
+        <p>&copy; 2024 Cty TNHH Phát Triển Thể Thao Vuidokan. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
