@@ -180,7 +180,7 @@ form button:hover {
     height: 50px;
     border-radius: 50%;
     background-color:rgba(189, 239, 88, 0);
-    color: rgb(255, 0, 0);
+    color: #228B22;
     border: none;
     font-family: monospace;
     font-weight: bold;
