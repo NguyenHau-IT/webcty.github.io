@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Ký</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="image/vuidokan.jpg" alt="" style="margin-right: 40px;">
+            <h1>Cty TNHH Phát Triển Thể Thao Vuidokan</h1>
+        </div>
+    </header>
+
+    <h2>Form Đăng Ký</h2>
+
+    <form id="registrationForm" action="https://formspree.io/f/xnnanwyg" method="POST">
+        <label for="name">Họ và tên:</label><br>
+        <input type="text" id="name" name="Tên" required autocomplete="off"><br><br>
+
+        <label for="phone">Số điện thoại:</label><br>
+        <input type="tel" id="phone" name="Sđt" pattern="[0-9]{10}" required autocomplete="off"><br><br>
+
+        <label for="class">Lớp học tham gia:</label><br>
+        <select id="class" name="lớp" required>
+            <option value="">Chọn lớp học</option>
+            <option value="Lớp Aerobic">lớp Aerobic</option>
+        </select><br><br>
+        <input type="submit" value="Gửi">
+        <button onclick="goback()">Quay lại</button>
+    </form>
+
+    <footer>
+        <p>&copy; 2024 Cty TNHH Phát Triển Thể Thao Vuidokan. All rights reserved.</p>
+    </footer>
+    <script src="login.js"></script>
+</body>
+</html>
