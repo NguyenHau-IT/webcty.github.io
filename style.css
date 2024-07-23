@@ -215,11 +215,12 @@ form button:hover {
 }
 @media screen and (max-width: 768px){
     .slider{
-        height: 400px;
+        width: 360px;
+        height: 300px;
     }
-    
+
     header {
-        font-size: 5vw;
+        font-size: 4vw;
         height: auto;
         padding: 2vh 0;
     }
@@ -247,7 +248,7 @@ form button:hover {
     }
 
     nav ul li {
-        display: block;
+        display: inline-flex;
         margin: 10px 0;
     }
 

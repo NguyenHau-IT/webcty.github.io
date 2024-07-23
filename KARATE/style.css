@@ -78,39 +78,40 @@ footer {
     height: 30px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
     body {
         background-size: auto;
     }
 
     header {
-        font-size: 5vw;
+        font-size: 4vw;
         height: auto;
+        width: 768px;
         padding: 2vh 0;
     }
 
     .header-content {
-        flex-direction: row-reverse; /* Adjust direction for better layout */
+        flex-direction: row-reverse;
         text-align: center;
-        padding: 0 10px; /* Add padding for spacing */
+        padding: 0 10px;
     }
 
     .header-content img {
-        width: 70px; /* Adjust image size */
+        width: 70px;
         height: auto;
         margin-right: 0;
-        margin-left: 10px; /* Provide margin for separation */
+        margin-left: 10px;
     }
 
     h3 {
-        font-size: 5vw; /* Scale font size based on viewport */
-        padding: 10px; /* Add padding for spacing */
+        font-size: 5vw;
+        padding: 10px;
     }
 
     table {
-        width: 100%; /* Ensure table occupies full width */
-        overflow-x: auto; /* Enable horizontal scrolling */
-        font-size: 4vw; /* Scale font size for readability */
+        width: 100%;
+        overflow-x: auto;
+        font-size: 3vw;
     }
 
     th, td {
