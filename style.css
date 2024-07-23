@@ -214,15 +214,22 @@ form button:hover {
     width: 30px;
 }
 @media screen and (max-width: 768px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
     .slider{
-        width: 360px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width:auto;
         height: 300px;
     }
 
     header {
+        height: 170px;
+        width:auto;
         font-size: 3vw;
-        height: auto;
-        padding: 2vh 0;
     }
 
     .header-content {
