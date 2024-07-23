@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vuidokan</title>
+    <title>Cty TNHH Phát Triển Thể Thao Vuidokan</title>
     <link rel="icon" href="image/vuidokan.jpg" rel="image/vuidokan">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,7 +12,7 @@
 <body>
     <header>
         <div class="header-content">
-            <img src="image/vuidokan.jpg" alt="" style="margin-right: 40px;">
+            <img src="image/vuidokan.jpg" alt="">
             <h1>Cty TNHH Phát Triển Thể Thao Vuidokan</h1>
         </div>
     </header>
@@ -22,31 +21,31 @@
         <form action="https://formspree.io/f/mvgpgnev" method="POST" onsubmit="return validateDate()">
             <div class="form-group">
                 <label for="ten-btc">Tên Ban Tổ Chức:</label>
-                <input type="text" id="Tên BTC" name="ten-btc" required>
+                <input type="text" id="ten-btc" name="Tên BTC" required>
             </div>
             <div class="form-group">
                 <label for="sdt">Số Điện Thoại:</label>
-                <input type="tel" id="Sđt" name="sdt" required autocomplete="off">
+                <input type="tel" id="sdt" name="Sđt" required autocomplete="off">
             </div>
             <div class="form-group">
                 <label for="ten-giai">Tên Giải Đấu:</label>
-                <input type="text" id="Tên giải" name="ten-giai" required autocomplete="off">
+                <input type="text" id="ten-giai" name="Tên giải" required autocomplete="off">
             </div>
             <div class="form-group">
                 <label for="so-tham">Số Thảm Dự Kiến:</label>
-                <input type="number" id="Số thảm" name="so-tham" required autocomplete="off">
+                <input type="number" id="so-tham" name="Số thảm" required autocomplete="off">
             </div>
             <div class="form-group">
                 <label for="so-vdv">Số Vận Động Viên Dự Kiến:</label>
-                <input type="number" id="Số vdv" name="so-vdv" required autocomplete="off">
+                <input type="number" id="so-vdv" name="Số VDV" required autocomplete="off">
             </div>
             <div class="form-group">
                 <label for="kinh-phi">Kinh Phí Dự Kiến:</label>
-                <input type="number" id="Kinh phí" name="kinh-phi" required autocomplete="off">
+                <input type="number" id="kinh-phi" name="Kinh phí" required autocomplete="off">
             </div>
             <div class="form-group">
                 <label for="thoi-gian">Thời Gian Giải Đấu (dd/mm/yyyy):</label>
-                <input type="text" id="Thời gian diển ra giải" name="thoi-gian" required autocomplete="off">
+                <input type="text" id="thoi-gian" name="Thời gian diển ra giải" required autocomplete="off">
             </div>
             <div class="form-group">
                 <label for="messenger">Lời nhắn:</label>
@@ -54,7 +53,7 @@
             </div>
             <div class="form-group">
                 <button type="submit">Đăng Kí</button>
-                <button onclick="goback()">Quay lại</button>
+                <button type="button" onclick="goback()">Quay lại</button>
             </div>
         </form>
     </div>

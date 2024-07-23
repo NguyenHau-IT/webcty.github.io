@@ -10,45 +10,45 @@
 
 <body>
     <div class="header-content">
-        <img src="image/vuidokan.jpg" alt="" style="margin-right: 40px;">
+        <img src="image/vuidokan.jpg" alt="">
         <h1>Cty TNHH Phát Triển Thể Thao Vuidokan</h1>
     </div>
     <header>
         <h1>Võ Phục</h1>
-        <button id="back" onclick="goback()">Quay lại</button>
-        <button id="cart-button">Giỏ hàng: <span id="cart-count">0</span></button>
+        <button type="button" id="back" onclick="goback()">Quay lại</button>
+        <button type="button" id="cart-button">Giỏ hàng: <span id="cart-count">0</span></button>
     </header>
     <main class="products-container">
         <div class="product" data-id="1" data-name="Sản phẩm 1" data-price="100000">
             <img src="product1.jpg" alt="Sản phẩm 1">
             <h2>Sản phẩm 1</h2>
             <p>Giá: 100.000 VND</p>
-            <button class="add-to-cart">Thêm vào giỏ</button>
-            <button class="view-details">Xem thông tin sản phẩm</button>
+            <button type="button" class="add-to-cart">Thêm vào giỏ</button>
+            <button type="button" class="view-details">Xem thông tin sản phẩm</button>
         </div>
 
         <div class="product" data-id="2" data-name="Sản phẩm 2" data-price="200000">
             <img src="product2.jpg" alt="Sản phẩm 2">
             <h2>Sản phẩm 2</h2>
             <p>Giá: 200.000 VND</p>
-            <button class="add-to-cart">Thêm vào giỏ</button>
-            <button class="view-details">Xem thông tin sản phẩm</button>
+            <button type="button" class="add-to-cart">Thêm vào giỏ</button>
+            <button type="button" class="view-details">Xem thông tin sản phẩm</button>
         </div>
 
         <div class="product" data-id="3" data-name="Sản phẩm 3" data-price="150000">
             <img src="product3.jpg" alt="Sản phẩm 3">
             <h2>Sản phẩm 3</h2>
             <p>Giá: 150.000 VND</p>
-            <button class="add-to-cart">Thêm vào giỏ</button>
-            <button class="view-details">Xem thông tin sản phẩm</button>
+            <button type="button" class="add-to-cart">Thêm vào giỏ</button>
+            <button type="button" class="view-details">Xem thông tin sản phẩm</button>
         </div>
 
         <div class="product" data-id="4" data-name="Sản phẩm 4" data-price="180000">
             <img src="product4.jpg" alt="Sản phẩm 4">
             <h2>Sản phẩm 4</h2>
             <p>Giá: 180.000 VND</p>
-            <button class="add-to-cart">Thêm vào giỏ</button>
-            <button class="view-details">Xem thông tin sản phẩm</button>
+            <button type="button" class="add-to-cart">Thêm vào giỏ</button>
+            <button type="button" class="view-details">Xem thông tin sản phẩm</button>
         </div>
         <!-- Modal chi tiết sản phẩm -->
         <div class="modal">
@@ -70,7 +70,7 @@
             <span class="close">&times;</span>
             <h2>Giỏ Hàng</h2>
             <div id="cart-items"></div>
-            <button id="place-order">Đặt Hàng</button>
+            <button type="button" id="place-order">Đặt Hàng</button>
         </div>
     </div>
 
@@ -80,7 +80,7 @@
             <h2>Thông tin liên hệ</h2>
             <form id="contact-form">
                 <label for="name">Họ và tên:</label>
-                <input type="text" id="Tên" name="name" required>
+                <input type="text" id="name" name="Tên" required>
 
                 <label for="phone">số điện thoại/label>
                 <input type="tel" id="tel" name="Sđt" required>

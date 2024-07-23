@@ -7,6 +7,16 @@ header {
     text-align: center;
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+}
+.header-content img {
+    margin-right: 40px;
+    width: 100px;
+    height: auto;
+}
+
 h2{
     font-size: 80px;
     text-align: center;
