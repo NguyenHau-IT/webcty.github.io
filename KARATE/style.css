@@ -33,7 +33,7 @@ header {
     text-align: center;
 }
 
-h3{
+h2{
     text-align: center;
     font-size: 50px;
     padding: 5px;
@@ -86,7 +86,7 @@ footer {
     header {
         font-size: 4vw;
         height: auto;
-        width: 768px;
+        width: auto;
         padding: 2vh 0;
     }
 
