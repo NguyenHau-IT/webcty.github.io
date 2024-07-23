@@ -228,7 +228,7 @@ form button:hover {
 
     header {
         height: 200px;
-        width:auto;
+        width:100%;
         font-size: 3vw;
     }
 

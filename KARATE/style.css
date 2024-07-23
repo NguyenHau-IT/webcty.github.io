@@ -29,7 +29,7 @@ header {
     background-color: red;
     color: white;
     padding: 10px 0;
-    height: 100px;
+    height: 200px;
     text-align: center;
 }
 
@@ -81,23 +81,23 @@ footer {
 @media (max-width: 768px) {
     body {
         background-size: auto;
+        margin: 0;
+        padding: 0;
     }
 
     header {
         font-size: 4vw;
-        height: auto;
+        height: 200px;
         width: auto;
-        padding: 2vh 0;
     }
 
     .header-content {
         flex-direction: row-reverse;
         text-align: center;
-        padding: 0 10px;
     }
 
     .header-content img {
-        width: 70px;
+        width: 60px;
         height: auto;
         margin-right: 0;
         margin-left: 10px;
@@ -112,10 +112,11 @@ footer {
         width: 100%;
         overflow-x: auto;
         font-size: 3vw;
+        border: 1px black;
     }
 
     th, td {
-        padding: 10px; /* Add padding for spacing */
+        padding: 5px; /* Add padding for spacing */
     }
 
     .Information {

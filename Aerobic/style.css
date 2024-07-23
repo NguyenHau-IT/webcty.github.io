@@ -81,10 +81,16 @@ footer {
 }
 
 @media (max-width: 768px) {
+    body {
+        background-size: auto;
+        margin: 0;
+        padding: 0;
+    }
+
     header {
-        font-size: 5vw;
-        height: auto;
-        padding: 2vh 0;
+        font-size: 4vw;
+        height: 200px;
+        width: auto;
     }
 
     .header-content {
@@ -92,29 +98,42 @@ footer {
         text-align: center;
     }
 
-    button {
-        font-size: 5vw;
+    .header-content img {
+        width: 60px;
         height: auto;
-        width: 90%;
-        border-radius: 10px;
+        margin-right: 0;
+        margin-left: 10px;
     }
 
-    form input, form button, form textarea {
+    h3 {
         font-size: 5vw;
-        width: 90%;
+        padding: 10px;
     }
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
+    table {
+        width: 100%;
+        overflow-x: auto;
+        font-size: 3vw;
+        border: 1px black;
     }
 
-    nav ul li {
-        display: block;
-        margin: 10px 0;
+    th, td {
+        padding: 5px; /* Add padding for spacing */
     }
 
-    section {
-        font-size: 5vw;
+    .Information {
+        font-size: 4vw; /* Scale font size for readability */
+    }
+
+    button {
+        font-size: 5vw; /* Scale button font size */
+        height: auto;
+        width: 100%; /* Ensure button spans full width */
+        border-radius: 10px; /* Adjust border radius for button */
+    }
+
+    footer {
+        font-size: 3vw; /* Scale font size for footer */
+        height: auto;
     }
 }

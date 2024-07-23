@@ -6,7 +6,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #00CD00;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -47,7 +46,6 @@ h1, h2 {
 form {
     width: 50%;
     margin: auto;
-    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
 }
@@ -59,9 +57,9 @@ label {
 }
 
 input {
-    width: 100%;
-    padding: 8px;
+    width: 95%;
     margin-top: 5px;
+    font-size: 20px;
 }
 
 button {
@@ -93,6 +91,36 @@ th, td {
     text-align: center;
 }
 
-div{
-    display: flex;
+@media (max-width: 768px) {body {
+    background-size: auto;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    font-size: 4vw;
+    height: auto;
+}
+
+.header-content {
+    flex-direction: row-reverse;
+    text-align: center;
+}
+
+button {
+    font-size: 50px;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+}
+
+form{
+    width: 100%;
+
+}
+
+table{
+    width: 100%;
+}
 }
