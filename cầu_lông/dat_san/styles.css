@@ -16,6 +16,12 @@ body {
     align-items: center;
 }
 
+.header-content img {
+    margin-right: 40px;
+    width: 100px;
+    height: auto;
+}
+
 header {
     font-size: 30px;
     background-color: red;
