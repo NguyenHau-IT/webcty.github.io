@@ -9,8 +9,8 @@ body {
     display: flex;
     align-items: center;
     font-size: 30px;
-    background-color: red;
-    color: white;
+    background-color: #00cd00;
+    color: red;
     padding: 10px 0;
     height: 100px;
     text-align: center;
@@ -87,6 +87,16 @@ button.add-to-cart {
 
 button.add-to-cart:hover {
     background-color: #218838;
+}
+
+footer {
+    font-family: Arial;
+    background-color: #00CD00;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Modal styles */

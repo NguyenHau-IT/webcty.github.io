@@ -69,12 +69,13 @@ body {
 .header-content img {
     width: 100px;
     height: auto;
+    padding: 30px;
 }
 
 header {
     font-size: 30px;
-    background-color: red;
-    color: white;
+    background-color: #00cd00;
+    color: red;
     height: 200px;
     text-align: center;
 }
@@ -89,7 +90,7 @@ section {
 
 footer {
     font-family: Arial;
-    background-color: red;
+    background-color: #00CD00;
     color: white;
     text-align: center;
     padding: 10px 0;
