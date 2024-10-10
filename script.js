@@ -37,4 +37,53 @@ dots.forEach((li, key) => {
     });
 });
 
+const carousel = document.querySelector('.carousel');
+const newsItems = document.querySelectorAll('.news-item');
+const totalItems = newsItems.length;
+const itemsPerSlide = 3; // Số tin hiển thị mỗi lần
+let currentIndex = 0;
+
+// Hàm cập nhật carousel để hiển thị 3 tin hoặc ít hơn nếu không đủ
+function updateCarousel() {
+    const visibleItems = [];
+
+    // Kiểm tra nếu số tin còn lại ít hơn số tin mỗi slide
+    const itemsToShow = Math.min(itemsPerSlide, totalItems - currentIndex);
+
+    // Tính toán các chỉ số tin cần hiển thị
+    for (let i = 0; i < itemsToShow; i++) {
+        const index = (currentIndex + i) % totalItems; // Lấy tin tiếp theo, lặp lại nếu cần
+        visibleItems.push(newsItems[index]);
+    }
+
+    // Ẩn tất cả tin trước
+    newsItems.forEach((item) => item.style.display = 'none');
+
+    // Hiển thị các tin đã chọn
+    visibleItems.forEach((item) => item.style.display = 'flex');
+}
+
+// Hàm chuyển đến nhóm tin tiếp theo
+function showNextItems() {
+    // Nếu còn ít hơn itemsPerSlide tin thì quay lại đầu
+    currentIndex = (currentIndex + itemsPerSlide) % totalItems;
+    updateCarousel();
+}
+
+// Hàm quay lại nhóm tin trước đó
+function showPrevItems() {
+    // Quay lại nhóm 3 tin trước đó, nếu đang ở đầu thì quay lại cuối
+    currentIndex = (currentIndex - itemsPerSlide + totalItems) % totalItems;
+    updateCarousel();
+}
+
+// Gán sự kiện click cho các nút điều hướng
+document.getElementById('prevBtn').addEventListener('click', showPrevItems);
+document.getElementById('nextBtn').addEventListener('click', showNextItems);
+
+// Auto-slide every 5 seconds
+setInterval(showNextItems, 5000);
+
+// Hiển thị tin ban đầu
+updateCarousel();
 reloadSlider();
