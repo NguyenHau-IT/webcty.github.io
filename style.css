@@ -221,7 +221,6 @@ form button:hover {
 
 /* Carousel and News Section */
 #news {
-    height: 1200px;
     background-color: #fff;
     padding: 3em 0;
 }
@@ -246,7 +245,6 @@ form button:hover {
 
 /* Carousel container */
 .carousel {
-    height: 1200px;
     position: relative;
     width: 100%;
     overflow: hidden;
