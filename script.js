@@ -77,5 +77,5 @@ function showPrevItems() {
     updateCarousel();
 }
 // Auto-slide every 5 seconds
-setInterval(showNextItems, 3000);
+setInterval(showNextItems, 8000);
 reloadSlider();
