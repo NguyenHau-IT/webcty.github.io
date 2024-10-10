@@ -76,14 +76,6 @@ function showPrevItems() {
     currentIndex = (currentIndex - itemsPerSlide + totalItems) % totalItems;
     updateCarousel();
 }
-
-// Gán sự kiện click cho các nút điều hướng
-document.getElementById('prevBtn').addEventListener('click', showPrevItems);
-document.getElementById('nextBtn').addEventListener('click', showNextItems);
-
 // Auto-slide every 5 seconds
-setInterval(showNextItems, 5000);
-
-// Hiển thị tin ban đầu
-updateCarousel();
+setInterval(showNextItems, 3000);
 reloadSlider();
