@@ -47,20 +47,86 @@ button {
     width: 1000px;
 }
 
+/* Định dạng chung cho thanh điều hướng */
+nav {
+    text-align: center;
+    /* Căn giữa nội dung trong nav */
+    margin: 20px 0;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0 auto;
+    display: inline-flex;
+    /* Chuyển từ flex sang inline-flex để căn giữa */
 }
 
+/* Định dạng từng mục của thanh điều hướng */
 nav ul li {
-    padding: 30px;
-    display: inline;
-    margin: 0 15px;
+    position: relative;
+    margin-right: 100px;
 }
 
+/* Định dạng cho liên kết */
 nav ul li a {
-    color: white;
     text-decoration: none;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover đổi màu nút */
+nav ul li a:hover {
+    background-color: #ff6b6b;
+}
+
+/* Dropdown danh sách con, ẩn mặc định */
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* Xuất hiện ngay dưới nút cha */
+    left: 0;
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 150px;
+    /* Đặt kích thước để căn giữa danh sách con */
+}
+
+/* Căn giữa danh sách con */
+nav ul li .dropdown li {
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li .dropdown li a {
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #333;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover trong danh sách con */
+nav ul li .dropdown li a:hover {
+    background-color: #f4f4f4;
+}
+
+/* Khi hover vào li, hiển thị danh sách con */
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+/* Căn giữa dropdown dưới mỗi nút */
+nav ul li .dropdown {
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 main {
@@ -237,7 +303,7 @@ form button:hover {
     border-radius: 5px;
 }
 
-#news .news-item .btn.btn:hover{
+#news .news-item .btn.btn:hover {
     background-color: red;
 }
 
@@ -335,17 +401,80 @@ form button:hover {
         width: 90%;
     }
 
+    /* Căn chỉnh toàn bộ thanh điều hướng theo chiều dọc */
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        width: 100%;
     }
 
     nav ul li {
-        display: inline-flex;
         margin: 10px 0;
+        /* Cách nhau dọc */
+    }
+
+    /* Định dạng cho liên kết trên thiết bị di động */
+    nav ul li a {
+        padding: 30px;
+        width: 100%;
+        text-align: left;
+        /* Căn trái text để dễ đọc trên di động */
+        color: white;
+    }
+
+    /* Danh sách con sẽ hiển thị theo chiều dọc và chiếm toàn bộ chiều rộng */
+    nav ul li .dropdown {
+        position: relative;
+        /* Đặt relative để danh sách nằm ngay dưới */
+        left: 0;
+        transform: none;
+        /* Không cần dịch chuyển X */
+        width: 100%;
+        /* Chiếm toàn bộ chiều rộng màn hình */
+    }
+
+    /* Định dạng các mục trong danh sách dropdown */
+    nav ul li .dropdown li a {
+        padding: 10px 15px;
+        background-color: #fff;
+        color: #333;
+        text-align: left;
+    }
+
+    /* Hiển thị dropdown theo chiều dọc */
+    nav ul li .dropdown li {
+        margin-bottom: 5px;
     }
 
     section {
         font-size: 5vw;
+    }
+
+
+    .Phone img {
+        margin-right: 10px;
+        width: 15px;
+        height: auto;
+    }
+
+    .Email img {
+        margin-right: 10px;
+        width: 15px;
+        height: auto;
+    }
+
+    .Local img {
+        margin-right: 10px;
+        width: 15px;
+        height: auto;
+    }
+
+    .Facebook img {
+        margin-right: 10px;
+        width: 15px;
+        height: auto;
+    }
+
+    #about{
+        font-size: 15px;
     }
 }
