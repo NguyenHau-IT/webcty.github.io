@@ -24,11 +24,11 @@ body {
 }
 
 header {
-    font-size: 30px;
+    font-size: 20px;
     background-color: #00CD00;
     color: red;
     padding: 10px 0;
-    height: 200px;
+    height: 150px;
     text-align: center;
 }
 
@@ -41,10 +41,10 @@ button {
     background-color: #20ca20;
     cursor: pointer;
     text-align: center;
-    font-size: 50px;
+    font-size: 35px;
     border-radius: 50px;
     height: 60px;
-    width: 1000px;
+    width: 600px;
 }
 
 /* Định dạng chung cho thanh điều hướng */
@@ -134,8 +134,19 @@ main {
 }
 
 section {
-    font-size: 45px;
     margin-bottom: 20px;
+}
+
+section h2{
+    font-size: 40px;
+}
+
+section h3{
+    font-size: 35px;
+}
+
+section p{
+    font-size: 30px;
 }
 
 footer {
@@ -190,32 +201,35 @@ form button:hover {
 
 .Phone img {
     margin-right: 10px;
-    width: 45px;
+    width: 35px;
     height: auto;
 }
 
 .Email img {
     margin-right: 10px;
-    width: 45px;
+    width: 35px;
     height: auto;
 }
 
 .Local img {
     margin-right: 10px;
-    width: 45px;
+    width: 35px;
     height: auto;
 }
 
 .Facebook img {
     margin-right: 10px;
-    width: 45px;
+    width: 35px;
     height: auto;
 }
 
+#about{
+    font-size: 35px;
+}
 .slider {
     width: 1000px;
     max-width: 100vw;
-    height: 700px;
+    height: 500px;
     margin: auto;
     position: relative;
     overflow: hidden;
@@ -349,14 +363,6 @@ form button:hover {
     transform: translateY(-50%);
 }
 
-.carousel-nav button {
-    background-color: white;
-    color: black;
-    border: none;
-    cursor: pointer;
-    font-size: 2rem;
-}
-
 @media screen and (max-width: 768px) {
     body {
         margin: 0;
@@ -373,7 +379,7 @@ form button:hover {
     header {
         height: 200px;
         width: 100%;
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     .header-content {
@@ -382,7 +388,7 @@ form button:hover {
     }
 
     .header-content img {
-        margin-right: 40px;
+        margin-right: 20px;
         width: 100px;
         height: auto;
     }
@@ -475,5 +481,76 @@ form button:hover {
 
     #about{
         font-size: 15px;
+    }
+
+    #news {
+        background-color: #fff;
+    }
+
+    #news h3{
+        font-size: 20px;
+    }
+    
+    #news p{
+        font-size: 15px;
+    }
+
+    #news h2 {
+        margin-bottom: 20px;
+    }
+    
+    #news .news-item .btn {
+        padding: 10px 20px;
+        background-color: #ff6b6b;
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    
+    #news .news-item .btn.btn:hover {
+        background-color: red;
+    }
+    
+    /* Carousel container */
+    .carousel {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .carousel .news-item {
+        width: 100%;
+        flex-direction: column;
+        /* Mỗi tin chiếm 1/3 chiều rộng */
+        box-sizing: border-box;
+        padding: 5px;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        margin-right: 5px;
+        text-align: center;
+        transition: transform 0.5s ease;
+        font-size: 1vh;
+        color: black;
+    }
+    
+    .carousel .news-item img {
+        width: 100%;
+        height: 30vh;
+        border-radius: 5px;
+    }
+    
+    /* Carousel navigation buttons */
+    .carousel-nav {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: flex-end;
+        transform: translateY(-50%);
     }
 }

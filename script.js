@@ -40,42 +40,62 @@ dots.forEach((li, key) => {
 const carousel = document.querySelector('.carousel');
 const newsItems = document.querySelectorAll('.news-item');
 const totalItems = newsItems.length;
-const itemsPerSlide = 3; // Số tin hiển thị mỗi lần
+let itemsPerSlide = 3; // Default for desktop
 let currentIndex = 0;
 
-// Hàm cập nhật carousel để hiển thị 3 tin hoặc ít hơn nếu không đủ
+// Function to update carousel based on currentIndex and itemsPerSlide
 function updateCarousel() {
     const visibleItems = [];
 
-    // Kiểm tra nếu số tin còn lại ít hơn số tin mỗi slide
+    // Calculate how many items to show
     const itemsToShow = Math.min(itemsPerSlide, totalItems - currentIndex);
 
-    // Tính toán các chỉ số tin cần hiển thị
+    // Push the next items to the visibleItems array
     for (let i = 0; i < itemsToShow; i++) {
-        const index = (currentIndex + i) % totalItems; // Lấy tin tiếp theo, lặp lại nếu cần
+        const index = (currentIndex + i) % totalItems;
         visibleItems.push(newsItems[index]);
     }
 
-    // Ẩn tất cả tin trước
+    // Hide all items first
     newsItems.forEach((item) => item.style.display = 'none');
 
-    // Hiển thị các tin đã chọn
+    // Display only the selected items
     visibleItems.forEach((item) => item.style.display = 'flex');
 }
 
-// Hàm chuyển đến nhóm tin tiếp theo
+// Function to go to the next set of items
 function showNextItems() {
-    // Nếu còn ít hơn itemsPerSlide tin thì quay lại đầu
     currentIndex = (currentIndex + itemsPerSlide) % totalItems;
     updateCarousel();
 }
 
-// Hàm quay lại nhóm tin trước đó
+// Function to go to the previous set of items
 function showPrevItems() {
-    // Quay lại nhóm 3 tin trước đó, nếu đang ở đầu thì quay lại cuối
     currentIndex = (currentIndex - itemsPerSlide + totalItems) % totalItems;
     updateCarousel();
 }
-// Auto-slide every 5 seconds
+
+// Check the screen width and adjust itemsPerSlide accordingly
+function checkScreenSize() {
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        // For mobile devices, show 1 item per slide
+        itemsPerSlide = 1;
+    } else {
+        // For desktop, show 3 items per slide
+        itemsPerSlide = 3;
+    }
+    // Reset currentIndex to avoid out-of-bound errors
+    currentIndex = 0;
+    updateCarousel();
+}
+
+// Auto-slide every 8 seconds
 setInterval(showNextItems, 8000);
+
+// Re-check screen size on window resize
+window.addEventListener('resize', checkScreenSize);
+
+// Initial check on page load
+checkScreenSize();
+
 reloadSlider();
