@@ -369,7 +369,7 @@ form button:hover {
     transform: translateY(-50%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 414px) {
     body {
         margin: 0;
         padding: 0;
@@ -383,7 +383,7 @@ form button:hover {
     }
 
     header {
-        height: 200px;
+        height: 150px;
         width: 100%;
         font-size: 2vw;
     }
@@ -394,8 +394,7 @@ form button:hover {
     }
 
     .header-content img {
-        margin-right: 20px;
-        width: 100px;
+        width: 80px;
         height: auto;
     }
 
