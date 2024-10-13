@@ -28,7 +28,7 @@ header {
     background-color: #00CD00;
     color: red;
     padding: 10px 0;
-    height: 150px;
+    height: 130px;
     text-align: center;
 }
 
@@ -79,6 +79,8 @@ nav ul li a {
 
 /* Hover đổi màu nút */
 nav ul li a:hover {
+    height: 25px;
+    width: 100px;
     background-color: #ff6b6b;
 }
 
