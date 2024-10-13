@@ -10,19 +10,19 @@
 </head>
 
 <body>
-    <div class="header-content">
-        <img src="image/vuidokan.jpg" alt="">
-        <h1>Cty TNHH Phát Triển Thể Thao Vuidokan</h1>
-    </div>
     <header>
-        <h1>Võ phục và dụng cụ thi đấu</h1>
-        <button type="button" id="cart-button">Giỏ hàng: <span id="cart-count">0</span></button>
-        <button type="button" id="back" onclick="goback()">Quay lại</button>
+        <div class="header-content">
+            <img src="image/vuidokan.jpg" alt="">
+            <h1>Cty TNHH Phát Triển Thể Thao Vuidokan</h1>
+        </div>
     </header>
+    <h2>Võ phục và dụng cụ thi đấu</h2>
+    <button type="button" id="cart-button">🛒 Giỏ hàng: <span id="cart-count">0</span></button>
+
     <main class="products-container">
         <div class="product" data-id="1" data-name="Sản phẩm 1" data-price="100000">
             <img src="product1.jpg" alt="Sản phẩm 1">
-            <h2>Sản phẩm 1</h2>
+            <h3>Sản phẩm 1</h3>
             <p>Giá: 100.000 VND</p>
             <button type="button" class="add-to-cart">Thêm vào giỏ</button>
             <button type="button" class="view-details">Xem thông tin sản phẩm</button>
@@ -30,7 +30,7 @@
 
         <div class="product" data-id="2" data-name="Sản phẩm 2" data-price="200000">
             <img src="product2.jpg" alt="Sản phẩm 2">
-            <h2>Sản phẩm 2</h2>
+            <h3>Sản phẩm 2</h3>
             <p>Giá: 200.000 VND</p>
             <button type="button" class="add-to-cart">Thêm vào giỏ</button>
             <button type="button" class="view-details">Xem thông tin sản phẩm</button>
@@ -38,7 +38,7 @@
 
         <div class="product" data-id="3" data-name="Sản phẩm 3" data-price="150000">
             <img src="product3.jpg" alt="Sản phẩm 3">
-            <h2>Sản phẩm 3</h2>
+            <h3>Sản phẩm 3</h3>
             <p>Giá: 150.000 VND</p>
             <button type="button" class="add-to-cart">Thêm vào giỏ</button>
             <button type="button" class="view-details">Xem thông tin sản phẩm</button>
@@ -46,8 +46,32 @@
 
         <div class="product" data-id="4" data-name="Sản phẩm 4" data-price="180000">
             <img src="product4.jpg" alt="Sản phẩm 4">
-            <h2>Sản phẩm 4</h2>
+            <h3>Sản phẩm 4</h3>
             <p>Giá: 180.000 VND</p>
+            <button type="button" class="add-to-cart">Thêm vào giỏ</button>
+            <button type="button" class="view-details">Xem thông tin sản phẩm</button>
+        </div>
+
+        <div class="product" data-id="5" data-name="Sản phẩm 5" data-price="100000">
+            <img src="product5.jpg" alt="Sản phẩm 5">
+            <h3>Sản phẩm 5</h3>
+            <p>Giá: 100.000 VND</p>
+            <button type="button" class="add-to-cart">Thêm vào giỏ</button>
+            <button type="button" class="view-details">Xem thông tin sản phẩm</button>
+        </div>
+
+        <div class="product" data-id="6" data-name="Sản phẩm 6" data-price="200000">
+            <img src="product6.jpg" alt="Sản phẩm 6">
+            <h3>Sản phẩm 6</h3>
+            <p>Giá: 200.000 VND</p>
+            <button type="button" class="add-to-cart">Thêm vào giỏ</button>
+            <button type="button" class="view-details">Xem thông tin sản phẩm</button>
+        </div>
+
+        <div class="product" data-id="7" data-name="Sản phẩm 7" data-price="150000">
+            <img src="product7.jpg" alt="Sản phẩm 7">
+            <h3>Sản phẩm 7</h3>
+            <p>Giá: 150.000 VND</p>
             <button type="button" class="add-to-cart">Thêm vào giỏ</button>
             <button type="button" class="view-details">Xem thông tin sản phẩm</button>
         </div>
@@ -84,16 +108,16 @@
                 <input type="text" id="name" name="Tên" required>
 
                 <label for="phone">số điện thoại/label>
-                <input type="tel" id="tel" name="Sđt" required>
+                    <input type="tel" id="tel" name="Sđt" required>
 
-                <label for="message">Lời nhắn:</label>
-                <textarea id="message" name="Lời nhắn"></textarea>
+                    <label for="message">Lời nhắn:</label>
+                    <textarea id="message" name="Lời nhắn"></textarea>
 
-                <button type="submit">Gửi</button>
+                    <button type="submit">Gửi</button>
             </form>
         </div>
     </div>
-
+    <button type="button" id="back" onclick="goback()">← Quay lại</button>
     <footer>
         <p>&copy; 2024 Cty TNHH Phát Triển Thể Thao Vuidokan. All rights reserved.</p>
     </footer>

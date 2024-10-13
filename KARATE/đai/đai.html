@@ -16,8 +16,8 @@
             <h1>Cty TNHH Phát Triển Thể Thao Vuidokan</h1>
         </div>
     </header>
-
     <h2>Thêu đai theo yêu cầu</h2>
+    <main>
         <form id="registrationForm" action="https://formspree.io/f/xnnanwyg" method="POST">
             <label for="name">Họ và tên:</label><br>
             <input type="text" id="name" name="Tên" required autocomplete="off"><br><br>
@@ -30,7 +30,7 @@
 
             <label for="belt">Chọn màu đai:</label><br>
             <select id="belt" name="màu đai" required>
-                <option value="" >Chọn màu đai</option>
+                <option value="">Chọn màu đai</option>
                 <option value="Trắng">Trắng</option>
                 <option value="Xanh lá">Xanh lá</option>
                 <option value="Vàng">Vàng</option>
@@ -43,14 +43,14 @@
             </select><br><br>
             <label for="size">Chọn độ đài:</label><br>
             <select id="size" name="độ dài" required>
-                <option value="" >Chọn độ dài</option>
+                <option value="">Chọn độ dài</option>
                 <option value="2m6">2m6</option>
                 <option value="2m8">2m8</option>
                 <option value="3m">3m</option>
                 <option value="3m2">3m2</option>
             </select><br><br>
             <input type="submit" value="Gửi">
-            <button onclick="goback()">Quay lại</button>
+            <button id="back" onclick="goback()">Quay lại</button>
         </form>
 
         <table>
@@ -192,7 +192,7 @@
                 </tr>
             </tbody>
         </table>
-
+    </main>
     <footer>
         <p>&copy; 2024 Cty TNHH Phát Triển Thể Thao Vuidokan. All rights reserved.</p>
     </footer>
